@@ -1,0 +1,293 @@
+:root {
+    --bg-color: #03131a;
+    --h1-color: #c4e7f0;
+    --h2-color: #8fd6e8;
+    --h3-color: #8fd6e8;
+    --h4-color: #6CA6B5;
+    --body-text: #6CA6B5;
+    --nav-bar: #c4e7f0;
+    --button: #d4ff9d;
+    
+
+
+
+}
+
+* {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+h1 {
+    font-weight: 800;
+    color: var(--h1-color);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.25rem;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    color: var(--h2-color);
+}
+
+h3 {
+    margin: 0;
+    font-weight: 600;
+    color: var(--h3-color);
+
+}
+
+html {
+    font-family: "Inter", system-ui, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+}
+
+p {
+    color: var(--body-text);
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+
+.nav-bar {
+    margin-right: 4rem;
+    margin-top: 1rem;
+    height: 5rem;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.063rem;
+    font-weight: 500;
+    
+    
+}
+
+.navigation {
+    display: flex;
+    margin-right: 1rem;
+    list-style-type: none;
+    
+    
+}
+
+.navigation > li {
+    margin: 0px 20px;
+}
+
+
+.nav-item {
+    color: var(--nav-bar);
+    font-weight: 400;
+}
+
+.resume-button {
+    /* margin-right: 1rem; */
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--button);
+    color: var(--button);
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: auto;
+    height: auto;
+    margin-top: 13rem;
+    margin-left: 20rem;
+    margin-bottom: 30rem;
+    
+}
+.hero > h1 {
+    margin: 0px;
+    font-size: 3.5rem;
+
+}
+
+
+
+.hero-buttons {
+    display: inline;
+}
+
+.hero-buttons > a {
+    font-size: 1.25rem;
+    margin-right:2rem;
+}
+
+.cta-button {
+    color: var(--bg-color);
+    background-color: var(--button);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.cta-ghost-button {
+    color: var(--button);
+    border-style: solid;
+    border-width: 3px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+main {
+    margin: 0rem 20rem;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.about-me {
+    position: relative;
+}
+
+figcaption > p {
+    margin-right: 4rem;
+    margin-top: 0rem;
+}
+
+.bio {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    /* margin-top: 4rem; */
+    margin-bottom: 25rem;
+}
+
+.bio > figcaption {
+    /* flex: 0 1 40%; */
+    /* margin-right: 10rem; */
+}
+
+
+.bio > img {
+   border-radius:15px;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.work {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 20px;
+
+}
+
+.project {
+    display: block;
+    margin-bottom: 8rem;
+}
+/* nth child is what is controlling alternating orientation*/
+.project:nth-child(2n+1) > .project-description {
+    left: 50%;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 25px;
+}
+
+.project:nth-child(2n+1) > .thumbnail-wrapper {
+    left: -50%;
+    margin-left: -85px;
+}
+
+
+.project-description {
+    position: relative;
+    display:inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.project-stack {
+    font-style: italic;
+    font-weight: 400;
+    margin: 8px auto;
+}
+
+.project-description > p {
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.project-button {
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--button);
+    color: var(--button);
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 8px;
+
+}
+
+.thumbnail-wrapper {
+    border-radius: 2px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    height: 300px;
+    margin-right: -250px;
+    position: relative;
+
+}
+
+.thumbnail-wrapper > img {
+    width: 100%;
+}
+
+
+
+section::after {
+    content: '';
+    display: block;
+    width: 500px;
+    height: 1px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* left: 25%; */
+    /* bottom: -4rem; */
+    margin: 2rem auto;
+    background-color: var(--body-text)
+
+}
+
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+
+
+}
+
+.socials {
+    display: flex;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+i {
+    font-size: 2.5rem;
+    color: #c4e7f0;
+    margin: 0 2rem
+}
